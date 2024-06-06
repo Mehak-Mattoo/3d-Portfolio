@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
-
-// import { Fox } from "../models";
+import Fox from "../models/Fox";
+import Loader from "../components/Loader";
 // import useAlert from "../hooks/useAlert";
 // import { Alert, Loader } from "../components";
 
@@ -50,7 +50,7 @@ const Contact = () => {
 
           setTimeout(() => {
             // hideAlert(false);
-            // setCurrentAnimation("idle");
+            setCurrentAnimation("idle");
             setForm({
               name: "",
               email: "",
@@ -61,7 +61,7 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-          // setCurrentAnimation("idle");
+          setCurrentAnimation("idle");
 
           // showAlert({
           //   show: true,
@@ -133,6 +133,21 @@ const Contact = () => {
             {loading ? "Sending..." : "Submit"}
           </button>
         </form>
+      </div>
+
+      <div className="lg:w-1/1 w-full lg:h-auto md:h-[550px] h-[350px]">
+        <Canvas camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}>
+          <directionalLight intensity={2.4} position={[0, 0, 1]} />
+          <ambientLight intensity={0.4} />
+          <Suspense fallback={<Loader />}>
+            <Fox
+              currentAnimation={currentAnimation}
+              position={[0.5, 0.35, 0]}
+              rotation={[12.7, -0.7, 0]}
+              scale={[0.5, 0.5, 0.5]}
+            />
+          </Suspense>
+        </Canvas>
       </div>
     </section>
   );
