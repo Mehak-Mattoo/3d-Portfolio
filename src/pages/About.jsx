@@ -1,7 +1,7 @@
 import React from "react";
 
 const About = () => {
-  return <div> about</div>;
+  return <section className="max-container"> about</section>;
 };
 
 export default About;
