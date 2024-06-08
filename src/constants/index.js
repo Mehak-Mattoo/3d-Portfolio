@@ -198,7 +198,7 @@ export const projects = [
     theme: "btn-back-blue",
     name: "English Dictionary",
     description:
-      "Dive deep into the definitions of words and enrich your understanding of their meanings and access their pronounciation.",
+      "Dive deep into the definitions of words and enrich your understanding of their meanings and pronounciation.",
     link: "https://mehak-dictionary.netlify.app",
   },
 
@@ -206,7 +206,7 @@ export const projects = [
     iconUrl: text,
     theme: "btn-back-orange",
     name: "Text-Utils",
-    description: "Manipulate and format your desired text with just a click",
+    description: "Manipulate and format your desired text with just a click.",
     link: "https://mehak-text-utils.netlify.app",
   },
 
@@ -215,7 +215,7 @@ export const projects = [
     theme: "btn-back-yellow",
     name: "Tic -Tac -Toe",
     description:
-      "Experience the timeless fun of Tic Tac Toe in a sleek and modern online format, perfect for players of all ages and skill levels.",
+      "Experience the timeless fun of Tic Tac Toe in a sleek and modern online format, perfect for players of all ages.",
     link: "https://mehak-tic-tac-toe.netlify.app",
   },
 ];

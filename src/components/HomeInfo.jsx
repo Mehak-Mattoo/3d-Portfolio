@@ -36,7 +36,7 @@ const HomeInfo = ({ currentStage }) => {
           Explore my projects to see my work in action
         </p>
 
-        <Link to="/about" className=" neo-brutalism-white neo-btn">
+        <Link to="/projects" className=" neo-brutalism-white neo-btn">
           Learn more
           <img src={arrow} alt="arrow" className="w-2 h-2 object-contain" />
         </Link>

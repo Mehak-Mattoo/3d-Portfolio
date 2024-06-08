@@ -7,19 +7,11 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <section className="max-container">
-      <h1 className="head-text">
-        Hello, I'm{" "}
-        <span className="blue-gradient_text font-semibold drop-shadow">
-          {" "}
-          Mehak Mattoo
-        </span>
-      </h1>
-
       <div className="text-slate-500 mt-2 leading-relaxed">
         <p>
           I've embarked on numerous projects throughout the years, but these are
-          the ones I hold closest to my heart. You can check check them out and
-          feel free to contribute your ideas for further enhancements.
+          the ones I hold closest to my heart. You can check them out and feel
+          free to contribute your ideas for further enhancements.
         </p>
       </div>
       <div className="flex flex-wrap my-20 gap-16">
