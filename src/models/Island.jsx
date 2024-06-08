@@ -52,12 +52,15 @@ export function Island({
       if (!isRotating) {
         setIsRotating(true);
       }
+
       islandRef.current.rotation.y += 0.01 * Math.PI;
+      rotationSpeed.current = 0.0125;
     } else if (e.key === "ArrowRight") {
       if (!isRotating) {
         setIsRotating(true);
       }
       islandRef.current.rotation.y -= 0.01 * Math.PI; // Rotate right.
+      rotationSpeed.current = -0.0125;
     }
   };
 
