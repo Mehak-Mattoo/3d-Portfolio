@@ -7,9 +7,9 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <h1 className="sm:text-l sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
         Hi, I'm
-        <span className="font-semibold mx-2 text-white">Mehak</span>
-        👋
-        <br />A Software Engineer from Croatia
+        <span className="font-semibold m-2 text-white">Mehak Mattoo</span>
+        <br />
+        Your Partner in Digital Innovation
       </h1>
     );
 
@@ -17,13 +17,13 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className="info-box">
         <p className="font-small sm:text-l text-center">
-          Worked with many companies <br /> and picked up many skills along the
-          way
+          Dive into my skillset <br />
+          and see what I bring to the table
         </p>
 
         <Link to="/about" className=" neo-brutalism-white neo-btn">
           Learn more
-          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+          <img src={arrow} alt="arrow" className="w-2 h-2 object-contain" />
         </Link>
       </div>
     );
@@ -32,14 +32,13 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 3) {
     return (
       <div className="info-box">
-        <p className="font-small text-center sm:text-l">
-          Led multiple projects to success over the years. <br /> Curious about
-          the impact?
+        <p className="font-small sm:text-l text-center">
+          Explore my projects to see my work in action
         </p>
 
-        <Link to="/projects" className="neo-brutalism-white neo-btn">
-          Visit my portfolio
-          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+        <Link to="/about" className=" neo-brutalism-white neo-btn">
+          Learn more
+          <img src={arrow} alt="arrow" className="w-2 h-2 object-contain" />
         </Link>
       </div>
     );
@@ -49,8 +48,8 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className="info-box">
         <p className="font-small sm:text-l text-center">
-          Need a project done or looking for a dev? <br /> I'm just a few
-          keystrokes away
+          Got a project in mind or looking for a dev? <br /> Let’s connect and
+          make it happen!
         </p>
 
         <Link to="/contact" className="neo-brutalism-white neo-btn">

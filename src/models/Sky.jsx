@@ -7,7 +7,6 @@ const Sky = ({ isRotating }) => {
   const { scene } = useGLTF(skyScene);
   const skyRef = useRef();
 
-  // Ensure the skyRef is properly set
   useFrame((_, delta) => {
     if (isRotating) {
       if (skyRef.current) {
