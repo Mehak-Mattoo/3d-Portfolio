@@ -5,6 +5,12 @@ import {
   contact,
   css,
   estate,
+  chat,
+  dictionary,
+  note,
+  tictactoe,
+  news,
+  text,
   express,
   git,
   github,
@@ -164,51 +170,52 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    iconUrl: chat,
+    theme: "btn-back-orange",
+    name: "Converso - A Chat Application",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "Enjoy seamless and instant messaging with people built using MERN stack and Socket.IO.",
+    link: "https://github.com/Mehak-Mattoo/chat-app",
   },
   {
-    iconUrl: threads,
-    theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
-    description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
-  },
-  {
-    iconUrl: car,
-    theme: "btn-back-blue",
-    name: "Car Finding App",
-    description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
-  },
-  {
-    iconUrl: snapgram,
+    iconUrl: note,
     theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    name: "Note Zen - A Note-Taking Application",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
+      "Store, edit, and delete your notes effortlessly in one centralized platform built using MERN stack.",
+    link: "https://github.com/Mehak-Mattoo/note-taking-site",
   },
   {
-    iconUrl: estate,
+    iconUrl: news,
     theme: "btn-back-black",
-    name: "Real-Estate Application",
+    name: "News Verse",
     description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
+      "Stay informed with the latest news from around the globe with NewsVerse – my cutting-edge news website built using React!.",
+    link: "https://github.com/Mehak-Mattoo/News-application",
   },
   {
-    iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
+    iconUrl: dictionary,
+    theme: "btn-back-blue",
+    name: "English Dictionary",
     description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "Dive deep into the definitions of words and enrich your understanding of their meanings and access their pronounciation.",
+    link: "https://mehak-dictionary.netlify.app",
+  },
+
+  {
+    iconUrl: text,
+    theme: "btn-back-orange",
+    name: "Text-Utils",
+    description: "Manipulate and format your desired text with just a click",
+    link: "https://mehak-text-utils.netlify.app",
+  },
+
+  {
+    iconUrl: tictactoe,
+    theme: "btn-back-yellow",
+    name: "Tic -Tac -Toe",
+    description:
+      "Experience the timeless fun of Tic Tac Toe in a sleek and modern online format, perfect for players of all ages and skill levels.",
+    link: "https://mehak-tic-tac-toe.netlify.app",
   },
 ];

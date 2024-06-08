@@ -26,13 +26,25 @@ import arrow from "./arrow.svg";
 import contact from "./contact.svg";
 import soundon from "./soundon.png";
 import java from "./java.png";
+import news from "./news.png";
+import tictactoe from "./tic-tac-toe.png";
+import chat from "./chat.png";
+import dictionary from "./dictionary.png";
+import text from "./text.png";
 import bootstrap from "./bootstrap.png";
+import note from "./note.png";
 import soundoff from "./soundoff.png";
 
 export {
   css,
   express,
   git,
+  chat,
+  note,
+  dictionary,
+  tictactoe,
+  news,
+  text,
   github,
   html,
   javascript,
