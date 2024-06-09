@@ -40,14 +40,14 @@ To run this project locally, follow these steps:
 
 ## Screenshots
 
-Home Page
+## Home Page
 ![home](https://github.com/Mehak-Mattoo/3d-Portfolio/assets/77096365/3fdc1033-4b15-4036-a2ca-002d250aed42)
 
 
-About Page
+## About Page
 ![about](https://github.com/Mehak-Mattoo/3d-Portfolio/assets/77096365/aa9bf4c1-6e96-49bc-9e42-d5a4e2e764d4)
 
 
-Project Page
+## Project Page
 ![projects](https://github.com/Mehak-Mattoo/3d-Portfolio/assets/77096365/b2c4414d-2eb0-4cbf-90ff-304f57e75ab1)
 
