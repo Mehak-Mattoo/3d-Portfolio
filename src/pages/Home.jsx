@@ -7,7 +7,7 @@ import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 import sakura from "../assets/sakura.mp3";
-import { soundoff } from "../assets/icons";
+import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -53,7 +53,7 @@ const Home = () => {
     } else {
       // larger screen
       screenScale = [3, 3, 3];
-      screenPosition = [0, 4, -4];
+      screenPosition = [0, -4, -4];
     }
     return [screenScale, screenPosition];
   };
