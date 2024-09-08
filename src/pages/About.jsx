@@ -20,7 +20,8 @@ const About = () => {
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Passionate Developer with a Knack for Problem-Solving and Innovation.
+          Passionate Full Stack Developer with a Knack for Problem-Solving and
+          Innovation.
         </p>
       </div>
       <div className="py-10 flex flex-col">

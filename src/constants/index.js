@@ -1,4 +1,4 @@
-import { chegg, growtharrow, fliprobo } from "../assets/images";
+import { chegg, growtharrow, fliprobo, summarizeX } from "../assets/images";
 
 import {
   car,
@@ -170,6 +170,23 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: summarizeX,
+    theme: "btn-back-pink",
+    name: "SummarizeX - AI Article Summarizer",
+    description:
+      "Develpoped an AI-Summatizer with text-to-speech, social-mmedia sharing and summary download options",
+    link: "https://summarize-x.vercel.app/",
+  },
+
+  {
+    iconUrl: news,
+    theme: "btn-back-black",
+    name: "News Verse",
+    description:
+      "Stay informed with the latest news from around the globe with NewsVerse – my cutting-edge news website built using React!.",
+    link: "https://news-verse-mu.vercel.app/",
+  },
+  {
     iconUrl: chat,
     theme: "btn-back-orange",
     name: "Converso - A Chat Application",
@@ -185,14 +202,7 @@ export const projects = [
       "Store, edit, and delete your notes effortlessly in one centralized platform built using MERN stack.",
     link: "https://github.com/Mehak-Mattoo/note-taking-site",
   },
-  {
-    iconUrl: news,
-    theme: "btn-back-black",
-    name: "News Verse",
-    description:
-      "Stay informed with the latest news from around the globe with NewsVerse – my cutting-edge news website built using React!.",
-    link: "https://github.com/Mehak-Mattoo/News-application",
-  },
+
   {
     iconUrl: dictionary,
     theme: "btn-back-blue",

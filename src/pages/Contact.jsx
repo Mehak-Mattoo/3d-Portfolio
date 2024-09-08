@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useRef, useState } from "react";
-import Fox from "../models/Fox";
+import { Suspense } from "react";
+import Dog from "../models/Dog";
 import Loader from "../components/Loader";
 import useAlert from "../hooks/useAlert";
 import Alert from "../components/Alert";
-// import { Alert, Loader } from "../components";
 
 const Contact = () => {
   const formRef = useRef();
@@ -45,19 +44,19 @@ const Contact = () => {
           setLoading(false);
           showAlert({
             show: true,
-            text: "Message Sent ",
+            text: "Message Sent",
             type: "success",
           });
 
           setTimeout(() => {
-            hideAlert(false);
+            hideAlert();
             setCurrentAnimation("idle");
             setForm({
               name: "",
               email: "",
               message: "",
             });
-          }, [2000]);
+          }, 2000);
         },
         (error) => {
           setLoading(false);
@@ -76,7 +75,6 @@ const Contact = () => {
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
       {alert.show && <Alert {...alert} />}
-      {/* <Alert {...alert} /> */}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
         <form
@@ -143,12 +141,7 @@ const Contact = () => {
           <directionalLight intensity={2.4} position={[0, 0, 1]} />
           <ambientLight intensity={0.4} />
           <Suspense fallback={<Loader />}>
-            <Fox
-              currentAnimation={currentAnimation}
-              position={[0.5, 0.35, 0]}
-              rotation={[12.7, -0.7, 0]}
-              scale={[0.5, 0.5, 0.5]}
-            />
+            <Dog currentAnimation={currentAnimation} />
           </Suspense>
         </Canvas>
       </div>

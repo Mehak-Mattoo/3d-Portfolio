@@ -3,8 +3,16 @@ import CTA from "../components/CTA";
 import { projects } from "../constants";
 import { arrow } from "../assets/icons";
 import { Link } from "react-router-dom";
+import resume from "../assets/Mehak_Mattoo_Resume.pdf";
 
 const Projects = () => {
+  const downloadResume = () => {
+    const resumeUrl = "../assets/Mehak_Mattoo_Resume.pdf";
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Mehak_Mattoo_Resume.pdf";
+    link.click();
+  };
   return (
     <section className="max-container">
       <div className="text-slate-500 mt-2 leading-relaxed">
@@ -40,7 +48,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600"
                 >
-                  Live Link
+                  Link
                 </Link>
                 <img
                   src={arrow}
@@ -52,6 +60,13 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
+      <button
+        onClick={downloadResume}
+        className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300"
+      >
+        Download Resume
+      </button>
 
       <hr className="border-slate-200" />
 
