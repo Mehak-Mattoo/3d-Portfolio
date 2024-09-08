@@ -7,11 +7,12 @@ import resume from "../assets/Mehak_Mattoo_Resume.pdf";
 
 const Projects = () => {
   const downloadResume = () => {
-    const resumeUrl = "../assets/Mehak_Mattoo_Resume.pdf";
     const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.download = "Mehak_Mattoo_Resume.pdf";
+    link.href = "../assets/Mehak_Mattoo_Resume.pdf"; // Update this path to the actual resume file
+    link.download = "Mehak_Mattoo_Resume.pdf"; // Specify the downloaded file name
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
   return (
     <section className="max-container">
