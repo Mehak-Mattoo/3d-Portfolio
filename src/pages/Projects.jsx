@@ -3,12 +3,12 @@ import CTA from "../components/CTA";
 import { projects } from "../constants";
 import { arrow } from "../assets/icons";
 import { Link } from "react-router-dom";
-import resume from "../assets/Mehak_Mattoo_Resume.pdf";
 
 const Projects = () => {
   const downloadResume = () => {
+    // doesnt work
     const link = document.createElement("a");
-    link.href = "../assets/Mehak_Mattoo_Resume.pdf"; // Update this path to the actual resume file
+    link.href = "../../public/Mehak_Mattoo_Resume.pdf";
     link.download = "Mehak_Mattoo_Resume.pdf"; // Specify the downloaded file name
     document.body.appendChild(link);
     link.click();

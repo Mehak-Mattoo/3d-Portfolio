@@ -1,4 +1,4 @@
-import { chegg, growtharrow, fliprobo, summarizeX } from "../assets/images";
+import { chegg, payr, fliprobo, summarizeX } from "../assets/images";
 
 import {
   car,
@@ -114,14 +114,16 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Subject Matter Expert",
-    company_name: "Chegg",
-    icon: chegg,
-    iconBg: " #E56717",
-    date: "Mar 2021 - Present",
+    title: "Full Stack Developer Intern",
+    company_name: "Payr",
+    icon: payr,
+    iconBg: "#E56717",
+    date: "Aug 2024 - Present",
     points: [
-      "Resolve student doubts and offered comprehensive solutions in Biology on a daily basis.",
-      "Ranked among the top solvers multiple times, demonstrating expertise and dedication.",
+      "Collaborated with the development team to design, build, and implement new features for the company’s website using MERN stack",
+      "Developed and optimized responsive front-end components with Tailwind CSS, ensuring seamless user experience across devices.",
+      "Integrated APIs and backend services to enhance website functionality, improving user engagement and system performance.",
+      "Participated in code reviews, debugging sessions, and the deployment of updates in a fast-paced, agile environment.",
     ],
   },
   {
@@ -135,17 +137,6 @@ export const experiences = [
       "Built a feature-rich note-taking website with seamless CRUD functionality for efficient note management",
       "Fashioned a responsive news website using React to deliver up-to-date information across various sectors.",
       "Designed an English dictionary application, enabling users to access meanings and pronunciation of words through integration with an external API.",
-    ],
-  },
-  {
-    title: "Equity research analyst",
-    company_name: "Growth Arrow",
-    icon: growtharrow,
-    iconBg: "#00ab41",
-    date: "Nov 2020 - Dec 2020",
-    points: [
-      "Analyzed candlestick patterns, chart analysis, and trading strategies in the stock market.",
-      "Applied technical and fundamental analysis techniques to make informed decisions and contribute to personal income growth. ",
     ],
   },
 ];
