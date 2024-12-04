@@ -8,9 +8,14 @@ export function Dog({ currentAnimation, ...props }) {
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
+    console.log("Available animations:", animations); // Debugging: Log available animations
+    
     if (actions[currentAnimation]) {
       actions[currentAnimation].reset().fadeIn(0.5).play();
+    } else {
+      console.warn(`Animation "${currentAnimation}" not found`); // Warn if the animation doesn't exist
     }
+    
     return () => {
       if (actions[currentAnimation]) {
         actions[currentAnimation].fadeOut(0.5);
