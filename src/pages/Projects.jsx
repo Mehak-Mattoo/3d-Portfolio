@@ -62,14 +62,19 @@ const Projects = () => {
         ))}
       </div>
 
-      <button
-        onClick={downloadResume}
-        className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300"
+      <button className="btn">
+
+      <a
+        href="../../public/Mehak_Mattoo_Resume.pdf" // Path
+        download="Mehak_Mattoo_Resume.pdf" // Name of the file when downloaded
       >
         Download Resume
+      </a>
       </button>
 
-      <hr className="border-slate-200" />
+   
+
+      <hr className="mt-5 border-slate-200" />
 
       <CTA />
     </section>

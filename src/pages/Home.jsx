@@ -16,7 +16,7 @@ const Home = () => {
 
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
-  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(true);
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -34,7 +34,7 @@ const Home = () => {
 
   useEffect(() => {
     if (isPlayingMusic) {
-      audioRef.current.play();
+      audioRef.current.play(); 
     }
 
     return () => {
@@ -44,8 +44,6 @@ const Home = () => {
 
   const adjustPlaneForScreenSize = () => {
     let screenScale, screenPosition;
-    // let screenPosition = [0, -6.5, -43];
-    // let rotation = [0.1, 4.7, 0];
 
     if (window.innerWidth < 768) {
       screenScale = [1.5, 1.5, 1.5];
@@ -71,16 +69,13 @@ const Home = () => {
         </div>
 
         <Canvas
-          className={`w-full h-screen bg-transparent ${
-            isRotating ? "cursor-grabbing" : "cursor-grab"
-          }`}
+          className={`w-full h-screen bg-transparent ${isRotating ? "cursor-grabbing" : "cursor-grab"}`}
           camera={{ near: 0.1, far: 1000 }}
         >
           <Suspense fallback={<Loader />}>
             <directionalLight position={[10, 7, 2]} intensity={2} />
             {/* light from a distant source - sunlight */}
             <ambientLight intensity={0.5} />
-
             <hemisphereLight skyColor="#ble1ff" groundColor={"#000000"} />
             <Bird />
             <Sky isRotating={isRotating} />

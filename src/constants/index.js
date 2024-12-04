@@ -45,6 +45,20 @@ export const skills = [
     type: "Frontend",
   },
 
+
+
+  {
+    imageUrl: typescript,
+    name: "Typescript",
+    type: "Frontend",
+  },
+
+  {
+    imageUrl: javascript,
+    name: "JavaScript",
+    type: "Frontend",
+  },
+
   {
     imageUrl: react,
     name: "React",
@@ -54,12 +68,6 @@ export const skills = [
     imageUrl: redux,
     name: "Redux",
     type: "State Management",
-  },
-
-  {
-    imageUrl: javascript,
-    name: "JavaScript",
-    type: "Frontend",
   },
 
   {
@@ -80,6 +88,17 @@ export const skills = [
   },
 
   {
+    imageUrl: git,
+    name: "Git",
+    type: "Version Control",
+  },
+  {
+    imageUrl: github,
+    name: "GitHub",
+    type: "Version Control",
+  },
+
+  {
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
     type: "Frontend",
@@ -97,27 +116,14 @@ export const skills = [
     type: "Frontend",
   },
 
-  {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
-  },
-  {
-    imageUrl: github,
-    name: "GitHub",
-    type: "Version Control",
-  },
+ 
   {
     imageUrl: figma,
     name: "Figma",
     type: "Frontend",
   },
 
-  {
-    imageUrl: typescript,
-    name: "Typescript",
-    type: "Frontend",
-  },
+
 
 ];
 
