@@ -1,10 +1,8 @@
 import { chegg, payr, fliprobo, summarizeX } from "../assets/images";
 
 import {
-  car,
   contact,
   css,
-  estate,
   chat,
   dictionary,
   note,
@@ -21,17 +19,16 @@ import {
   mongodb,
   mui,
   nodejs,
-  pricewise,
   react,
   redux,
   java,
-  snapgram,
-  summiz,
   tailwindcss,
-  threads,
+figma,
+typescript
 } from "../assets/icons";
 
 export const skills = [
+  
   {
     imageUrl: java,
     name: "Java",
@@ -110,6 +107,18 @@ export const skills = [
     name: "GitHub",
     type: "Version Control",
   },
+  {
+    imageUrl: figma,
+    name: "Figma",
+    type: "Frontend",
+  },
+
+  {
+    imageUrl: typescript,
+    name: "Typescript",
+    type: "Frontend",
+  },
+
 ];
 
 export const experiences = [
@@ -117,13 +126,13 @@ export const experiences = [
     title: "Full Stack Developer Intern",
     company_name: "Payr",
     icon: payr,
-    iconBg: "#E56717",
+    iconBg: "#000000",
     date: "Aug 2024 - Present",
     points: [
-      "Collaborated with the development team to design, build, and implement new features for the company’s website using MERN stack",
-      "Developed and optimized responsive front-end components with Tailwind CSS, ensuring seamless user experience across devices.",
-      "Integrated APIs and backend services to enhance website functionality, improving user engagement and system performance.",
-      "Participated in code reviews, debugging sessions, and the deployment of updates in a fast-paced, agile environment.",
+      "Boosted partner engagement by 40% by designing and implementing seamless API integrations, enabling external organizations to contribute content directly to the platform.",
+      "Reduced server load by 20% by integrating AWS S3 for seamless media storage by offloading file handling to the cloud",
+      "Spearheaded a multi-account login system, allowing users to seamlessly manage multiple accounts from a single platform, increasing user efficiency by 10%.",
+      "Participated in code reviews, debugging sessions, and the deployment of updates in a fast-paced environment.",
     ],
   },
   {
@@ -131,12 +140,11 @@ export const experiences = [
     company_name: "Flip Robo Technologies",
     icon: fliprobo,
     iconBg: "#ee6b6e",
-    date: " Jan 2023 - Oct 2023",
+    date: "Oct 2023 - Feb 2024",
     points: [
-      " Employed MERN stack to build a real-time messaging platform to connect users by their email",
-      "Built a feature-rich note-taking website with seamless CRUD functionality for efficient note management",
-      "Fashioned a responsive news website using React to deliver up-to-date information across various sectors.",
-      "Designed an English dictionary application, enabling users to access meanings and pronunciation of words through integration with an external API.",
+      "Delivered end-to-end development for 5+ web applications, ensuring user-friendly experiences",
+      "Implemented responsive designs and integrated external APIs to enhance application functionality.",
+
     ],
   },
 ];
@@ -162,19 +170,19 @@ export const socialLinks = [
 export const projects = [
   {
     iconUrl: summarizeX,
-    theme: "btn-back-pink",
+    theme: "btn-back-blue",
     name: "SummarizeX - AI Article Summarizer",
     description:
-      "Develpoped an AI-Summatizer with text-to-speech, social-mmedia sharing and summary download options",
+    "Developed an AI-powered summarizer with features like PDF/DOC downloads, handling over 100+ summaries monthly.",
     link: "https://summarize-x.vercel.app/",
   },
 
   {
     iconUrl: news,
-    theme: "btn-back-black",
+    theme: "btn-back-yellow",
     name: "News Verse",
     description:
-      "Stay informed with the latest news from around the globe with NewsVerse – my cutting-edge news website built using React!.",
+      "Built a responsive news website serving real-time updates across 10+ categories, ensuring the website provides the latest information with no delays.",
     link: "https://news-verse-mu.vercel.app/",
   },
   {
@@ -182,7 +190,7 @@ export const projects = [
     theme: "btn-back-orange",
     name: "Converso - A Chat Application",
     description:
-      "Enjoy seamless and instant messaging with people built using MERN stack and Socket.IO.",
+      "Engineered a messaging platform using MERN stack with real-time bi-directional communication between users.",
     link: "https://github.com/Mehak-Mattoo/chat-app",
   },
   {
@@ -190,7 +198,7 @@ export const projects = [
     theme: "btn-back-pink",
     name: "Note Zen - A Note-Taking Application",
     description:
-      "Store, edit, and delete your notes effortlessly in one centralized platform built using MERN stack.",
+      "Developed a feature-rich note-taking platform with CRUD Functionality.",
     link: "https://github.com/Mehak-Mattoo/note-taking-site",
   },
 
