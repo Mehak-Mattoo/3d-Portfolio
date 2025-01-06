@@ -1,13 +1,13 @@
-import React, { Suspense, useState, useRef, useEffect } from "react";
+import React, { Suspense, lazy, useState, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
-import Island from "../models/Island";
-import Sky from "../models/Sky";
-import Bird from "../models/Bird";
-import Plane from "../models/Plane";
-import HomeInfo from "../components/HomeInfo";
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
+const Island = lazy(() => import("../models/Island"));
+const Sky = lazy(() => import("../models/Sky"));
+const Bird = lazy(() => import("../models/Bird"));
+const Plane = lazy(() => import("../models/Plane"));
+const HomeInfo = lazy(() => import("../components/HomeInfo"));
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -16,7 +16,8 @@ const Home = () => {
 
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
-  const [isPlayingMusic, setIsPlayingMusic] = useState(true); // Start with music playing
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false); // Start with music playing
+  const [audioLoaded, setAudioLoaded] = useState(false);
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -33,26 +34,20 @@ const Home = () => {
   };
 
   useEffect(() => {
-    if (isPlayingMusic) {
-      audioRef.current.play(); 
+    if (isPlayingMusic && !audioLoaded) {
+      audioRef.current.src = sakura;
+      audioRef.current.play();
+      setAudioLoaded(true);
     }
 
     return () => {
       audioRef.current.pause();
     };
-  }, [isPlayingMusic]);
+  }, [isPlayingMusic, audioLoaded]);
 
   const adjustPlaneForScreenSize = () => {
-    let screenScale, screenPosition;
-
-    if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -1.5, 0];
-    } else {
-      // larger screen
-      screenScale = [3, 3, 3];
-      screenPosition = [0, -4, -4];
-    }
+    const screenScale = window.innerWidth < 768 ? [1.5, 1.5, 1.5] : [3, 3, 3];
+    const screenPosition = window.innerWidth < 768 ? [0, -1.5, 0] : [0, -4, -4];
     return [screenScale, screenPosition];
   };
 
@@ -69,7 +64,9 @@ const Home = () => {
         </div>
 
         <Canvas
-          className={`w-full h-screen bg-transparent ${isRotating ? "cursor-grabbing" : "cursor-grab"}`}
+          className={`w-full h-screen bg-transparent ${
+            isRotating ? "cursor-grabbing" : "cursor-grab"
+          }`}
           camera={{ near: 0.1, far: 1000 }}
         >
           <Suspense fallback={<Loader />}>
